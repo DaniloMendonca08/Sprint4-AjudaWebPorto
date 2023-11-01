@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+"use client"
+
 import { useState } from 'react';
 import IconeMenu from '../../../assets/iconemenu.svg'
 import './DropDown.style.css'
@@ -17,12 +18,12 @@ const Dropdown = () => {
       </button>
       {isOpen && (
            <ul className="dropdown-menu">
-            <li><Link to="../../pages/Ajuda">Ajuda</Link></li>
-            <li><Link to="../../pages/Organograma">Organograma</Link></li>
-            <li><Link to="../../pages/CentralSolucoes">Central Solucoes</Link></li>
-            <li><Link to="../../pages/ReportarProblema">Reportar Problema</Link></li>
-            <li><Link to="../../pages/RevisoesBreves">Revisoes Breves</Link></li>
-            <li><Link to="../../AcionamentoSinistro">Acionamento Sinistro</Link></li>
+            <li>Ajuda</li>
+            <li>Organograma</li>
+            <li>Central Solucoes</li>
+            <li>Reportar Problema</li>
+            <li>Revisoes Breves</li>
+            <li>Acionamento Sinistro</li>
           </ul>
        
       )}
