@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Lupa from "../../assets/LupaDePesquisa.svg"
+import Lupa from "../../../assets/LupaDePesquisa.svg"
 
 export const StyledHeader = styled.header`
     background-color: #E2E2FF;
