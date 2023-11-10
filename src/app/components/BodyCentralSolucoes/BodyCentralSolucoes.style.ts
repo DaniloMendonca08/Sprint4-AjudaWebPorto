@@ -8,6 +8,7 @@ export const StyledBodyCentralSolucoes = styled.body`
 export const StyledDivCentralSolucoes = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
+    justify-content: center;
     justify-items: center;
     padding: 18.9vh 0;
     

@@ -1,15 +1,9 @@
 import styled from "styled-components";
 
-export const StyledBodyPagPrincipal = styled.body`
-    width: 100%;
-`
-
 export const StyledDivPagPrincipal = styled.div`
     display: grid;
     justify-items: center;
     padding: 0 20px;
-
-
 `
 
 export const StyledIframePagPrincipal = styled.iframe`

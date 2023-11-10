@@ -1,7 +1,6 @@
 import { Imagem } from "../Imagem/Imagem"
 import { Paragrafo } from "../Paragrafo/Paragrafo"
 import { Titulo } from "../Titulo/Titulo"
-import { StyledBodyAcionamento } from "./BodyAcionamento.style"
 import { StyledDivBodyAcionamento } from "./BodyAcionamento.style"
 import imgAcionamentoSinistro from "../../assets/imgAcionamentoSinistro.svg"
 
@@ -10,15 +9,11 @@ export const paragrafoAcionamento = "Nesta parte, introduziremos algumas pergunt
 export const BodyAcionamento = () => {
 return(
         <>
-        <StyledBodyAcionamento>
-
             <StyledDivBodyAcionamento>
             <Titulo titulo="Acionamento de Sinistro" />
             <Imagem img={imgAcionamentoSinistro} descricao= "Imagem de uma pessoa ligando para algúem/algum lugar"/>
             <Paragrafo texto={paragrafoAcionamento}/>
             </StyledDivBodyAcionamento>
-
-        </StyledBodyAcionamento>
         </>
     )
 }

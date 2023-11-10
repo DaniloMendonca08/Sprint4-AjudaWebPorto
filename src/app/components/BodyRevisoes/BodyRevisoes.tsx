@@ -1,7 +1,6 @@
 import { Imagem } from "../Imagem/Imagem"
 import { Titulo } from "../Titulo/Titulo"
 import imgRevisoesBreves from "../../assets/imgRevisoesBreves.svg"
-import { StyledBodyRevisoes } from "./BodyRevisoes.style"
 import { StyledDivBodyRevisoes } from "./BodyRevisoes.style"
 import { Paragrafo } from "../Paragrafo/Paragrafo"
 
@@ -10,8 +9,6 @@ export const paragrafoRevisoes = "A ideia com essas revisões breves é fazer co
 export const BodyRevisoes = () => {
     return(
         <>
-        <StyledBodyRevisoes>
-
             <StyledDivBodyRevisoes>
                 <Titulo titulo= {"Revisões Breves"} />
 
@@ -19,8 +16,6 @@ export const BodyRevisoes = () => {
 
                 <Paragrafo texto={paragrafoRevisoes} />
             </StyledDivBodyRevisoes>
-
-        </StyledBodyRevisoes>
         </>
     )
 }

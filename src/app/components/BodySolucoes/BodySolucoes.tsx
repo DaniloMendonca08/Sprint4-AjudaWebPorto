@@ -1,7 +1,6 @@
 import { Imagem } from "../Imagem/Imagem"
 import { Paragrafo } from "../Paragrafo/Paragrafo"
 import { Titulo } from "../Titulo/Titulo"
-import { StyledBodySolucoes } from "./BodySolucoes.style"
 import { StyledDivBodySolucoes } from "./BodySolucoes.style"
 
 interface BodySolucoesprops{
@@ -14,8 +13,6 @@ interface BodySolucoesprops{
 export const BodySolucoes = ({titulo, img, texto, descricao}: BodySolucoesprops) => {
     return(
         <>
-        <StyledBodySolucoes>
-
             <StyledDivBodySolucoes>
                 <Titulo  titulo={titulo} />
 
@@ -23,8 +20,6 @@ export const BodySolucoes = ({titulo, img, texto, descricao}: BodySolucoesprops)
 
                 <Paragrafo texto={texto} />
             </StyledDivBodySolucoes>
-
-        </StyledBodySolucoes>
         </>
     )
 }
