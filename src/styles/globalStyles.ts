@@ -1,6 +1,10 @@
+"use client"
+
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+const styled = { createGlobalStyle }
+
+const GlobalStyles = styled.createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +16,10 @@ html {
     width: 100%;
   }
 
-  img {
+img {
     max-width: 100%;
   }
 
 `
 
-export default GlobalStyle;
+export default GlobalStyles;
