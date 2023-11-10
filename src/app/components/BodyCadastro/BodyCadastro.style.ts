@@ -6,6 +6,7 @@ export const StyledDivCadastro = styled.div`
     grid-gap: 2px;
 `
 
+
 export const StyledLabelCadastro = styled.label`
     font-size: 20px;
     color: #000000;
