@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const StyledBodyCentralSolucoes = styled.body`
-    justify-content: center;
-
-`
-
 export const StyledDivCentralSolucoes = styled.div`
     display: grid;
     grid-template-columns: 50% 50%;
