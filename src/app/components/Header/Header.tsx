@@ -1,5 +1,4 @@
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import LogoPorto from '../../../assets/porto-icone-header.svg'
+import LogoPorto from '../../../assets/portoicone-header.png'
 import Dropdown from '../../components/MenuNav/DropDown'
 import { StyledHeader } from './Header.style'
 import { StyledDivHeader } from './Header.style'
@@ -15,7 +14,7 @@ export const Header = ({RemoverInput}: InputProps) => {
     return (
             <StyledHeader>
             <StyledDivHeader>
-                <StyledImgPorto src={LogoPorto} alt="Logo da Porto Seguro" />
+                <StyledImgPorto src={LogoPorto.src} alt="Logo da Porto Seguro" />
                 <StyledInputHeader type="search" name="input-header" id="input-header" placeholder='Digite aqui o que procura' RemoverInput = {RemoverInput}/>
                     <Dropdown />
             </StyledDivHeader>

@@ -1,13 +1,17 @@
+"use client"
+
 import { Header } from "../components/Header/Header";
 import { BodyRevisoes } from "../components/BodyRevisoes/BodyRevisoes";
 import { Footer } from "../components/Footer/Footer";
 
-export const RevisoesBreves = () => {
+const RevisoesBreves = () => {
     return(
         <>
-        <Header RemoverInput />
+        <Header RemoverInput={true} />
         <BodyRevisoes />
         <Footer />
         </>
     )
 }
+
+export default RevisoesBreves

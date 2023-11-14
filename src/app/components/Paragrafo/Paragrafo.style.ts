@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledParagraph = styled.p`
-    font-family: 'Open Sans';
     font-size: 20px;
     font-weight: 300;
     padding-top: 25px;

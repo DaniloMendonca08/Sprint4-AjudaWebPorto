@@ -1,8 +1,11 @@
-import styled from "styled-components"
-import Lupa from "../../../assets/LupaDePesquisa.svg"
+"use client"
+
+import styled, { css } from "styled-components"
+import Lupa from "../../../assets/lupa.png"
+import { colors } from "@/styles/colors";
 
 export const StyledHeader = styled.header`
-    background-color: #E2E2FF;
+    background-color: ${colors.primary.purple};
     width: 100%;
     padding-top: 3vh;
 
@@ -26,11 +29,11 @@ export const StyledDivHeader = styled.div`
     display: flex; 
     align-items: center; 
     justify-content: space-between;
-    margin-left: 32px;   
+    margin-left: 32px; 
+    margin-right: 10px;
 
     @media (min-width: 320px) {
         margin-left: 10px;
-        margin-top: 0;
     }
 
     @media (min-width: 768px) {
@@ -43,40 +46,39 @@ export const StyledDivHeader = styled.div`
 
 ` 
 
-export const StyledInputHeader = styled.input`
-    width: 700px;
-    height: 40px;
-    border-radius: 150px;
-    background-image: url(${Lupa});
-    background-position: 2%;
-    background-repeat: no-repeat;
-    border: 1px solid white;
-    text-align: center;
-    margin-right: 205px;
-    
-${(props) =>
-props.RemoverInput &&`
-    display: none;
-`
-}
+interface StyledInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+    RemoverInput?: boolean;
+  }
 
-@media (min-width: 320px) {
-    display: none;
-}
+  export const StyledInputHeader = styled.input<StyledInputProps>`
+  width: 700px;
+  height: 40px;
+  border-radius: 150px;
+  background-image: url(${Lupa.src});
+  background-position: 2%;
+  background-repeat: no-repeat;
+  border: 1px solid ${colors.primary.light};
+  text-align: center;
+  margin-right: 205px;
 
-@media (min-width: 768px) {
-    display: block;
+  ${(props) =>
+    props.RemoverInput &&
+    css`
+        display: none;
+    `}
+
+  @media (min-width: 768px) and (max-width: 1023px) {
     width: 350px;
     height: 40px;
     margin-right: 70px;
-}
+  }
 
-@media (min-width: 1024px) {
+  @media (min-width: 1024px) {
     font-size: 18px;
     width: 450px;
     margin-left: 40px;
-}
-`
+  }
+`;
 
 export const StyledImgPorto = styled.img`
     width: 100px;

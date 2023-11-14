@@ -1,13 +1,17 @@
+"use client"
+
 import { BodyCadastro } from "../components/BodyCadastro/BodyCadastro"
 import { Footer } from "../components/Footer/Footer"
 import { Header } from "../components/Header/Header"
 
-export const FazerCadastro = () => {
+const FazerCadastro = () => {
     return(
         <>
-        <Header />
+        <Header RemoverInput={true}/>
         <BodyCadastro />
         <Footer />
         </>
     )
 }
+
+export default FazerCadastro

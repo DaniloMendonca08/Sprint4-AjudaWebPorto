@@ -2,7 +2,7 @@ import { Imagem } from "../Imagem/Imagem"
 import { Paragrafo } from "../Paragrafo/Paragrafo"
 import { Titulo } from "../Titulo/Titulo"
 import { StyledDivBodyAcionamento } from "./BodyAcionamento.style"
-import imgAcionamentoSinistro from "../../assets/imgAcionamentoSinistro.svg"
+import imgAcionamentoSinistro from "../../../assets/acionamento.png"
 
 export const paragrafoAcionamento = "Nesta parte, introduziremos algumas perguntas que são muito difíceis de serem indentificadas, seram poucas perguntas e bem objetivas, até porque neste momento o assegurado não gostaria de ter que responder uma série muito grande de questionamentos, mas, por trás destas simples perguntas, estará sendo trabalhado uma grande base de dados que fará com que a melhor escolha seja feita."
 

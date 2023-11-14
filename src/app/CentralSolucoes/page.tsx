@@ -1,13 +1,17 @@
+"use client"
+
 import { Header } from "../components/Header/Header";
-import { BodyCentralSolucoes } from "../components/BodyCentralSolucoes/BodyCentralSolucoes";
+import { BodyCentralSolucoes } from "../components/BodyCentralSolucoes/BodyCentralSolucoes"
 import { Footer } from "../components/Footer/Footer";
 
-export const CentralSolucoes = () => {
+const CentralSolucoes = () => {
     return(
         <>
-        <Header RemoverInput />
+        <Header RemoverInput={true} />
         <BodyCentralSolucoes />
         <Footer />
         </>
     )
 }
+
+export default CentralSolucoes

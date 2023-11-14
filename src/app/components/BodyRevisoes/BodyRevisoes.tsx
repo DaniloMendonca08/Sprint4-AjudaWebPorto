@@ -1,6 +1,6 @@
 import { Imagem } from "../Imagem/Imagem"
 import { Titulo } from "../Titulo/Titulo"
-import imgRevisoesBreves from "../../assets/imgRevisoesBreves.svg"
+import imgRevisoesBreves from "../../../assets/RevisoesBreves 4.png"
 import { StyledDivBodyRevisoes } from "./BodyRevisoes.style"
 import { Paragrafo } from "../Paragrafo/Paragrafo"
 

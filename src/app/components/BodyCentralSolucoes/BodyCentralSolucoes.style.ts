@@ -1,3 +1,4 @@
+import { colors } from "@/styles/colors";
 import styled from "styled-components";
 
 export const StyledDivCentralSolucoes = styled.div`
@@ -24,11 +25,11 @@ export const StyledTagACentralSolucoes = styled.a`
     padding: 40px;
     width: 15.5em;
     margin: 10px;
-    background-color: #00A1FC;
+    background-color: ${colors.primary.blue};
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
-    color: #000000;
+    color: ${colors.primary.dark};
     
 @media (min-width: 320px) {
     width: 100px;

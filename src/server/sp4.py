@@ -132,38 +132,39 @@ def cadastro(conn, create_ist, update_ist):
 def cadastro_via_front_end(conn, form, create_ist):
     global data
     data['cpf'] = None  # Initialize cpf in case it's not found in the database
-    data['cpf'] = form['cpf']
-    existing_cpf = get_cliente_data(conn, form['cpf'])
+    data['cpf'] = form['clientData']['cpf']
+    print("chegou aqui")
+    existing_cpf = verifica_cpf(conn, form['clientData']['cpf'])
 
     if existing_cpf:
-        mensagem = "Você ja é cadastrado!"
-        data['cpf'] = existing_cpf[1]
-        data['nome'] = existing_cpf[2]
-        data['nascimento'] = existing_cpf[3]
-        data['telefone'] = existing_cpf[4]
-        data['cep'] = existing_cpf[5]
-        data['rua'] = existing_cpf[6]
-        response = {'message': mensagem, 'data': data}
-        return jsonify(response), 409
+         mensagem = "Você ja é cadastrado!"
+         data['cpf'] = existing_cpf[1]
+         data['nome'] = existing_cpf[2]
+         data['nascimento'] = existing_cpf[3]
+         data['telefone'] = existing_cpf[4]
+         data['cep'] = existing_cpf[5]
+         data['rua'] = existing_cpf[6]
+         response = {'message': mensagem, 'data': data}
+         return (jsonify(response), 409)
     
     else:
-        data['Nome'] = form['nome']
-        data['Data De Nascimento'] = form['data_nascimento']
-        data['Telefone'] = form['telefone']
-        data['Cep'] = form['cep']
-        data['Rua'] = form['rua']
-        data['Bairro'] = form['bairro']
-        data['Cidade'] = form['cidade']
+        data['Nome'] = form['clientData']['nome']
+        data['Data De Nascimento'] = form['clientData']['data_nascimento']
+        data['Telefone'] = form['clientData']['telefone']
+        data['Cep'] = form['clientData']['cep']
+        data['Rua'] = form['clientData']['rua']
+        data['Bairro'] = form['clientData']['bairro']
+        data['Cidade'] = form['clientData']['cidade']
 
         cadastro = "INSERT INTO TB_CLIENTES (cpf_cliente, nome_cliente, birthday_cliente, telefone_cliente, cep_cliente, rua_cliente, bairro_cliente, cidade_cliente) " \
                        "VALUES (:cpf, :nome, :nascimento, :telefone, :cep, :rua, :bairro, :cidade)"
-        create_ist.execute(cadastro, cpf=form['cpf'], nome=form['nome'],
-                               nascimento=form['data_nascimento'], telefone=form['telefone'],
-                               cep=form['cep'], rua=form['rua'], bairro=form['bairro'],
-                               cidade=form['cidade'])
+        create_ist.execute(cadastro, cpf=form['clientData']['cpf'], nome=form['clientData']['nome'],
+                               nascimento=form['clientData']['data_nascimento'], telefone=form['clientData']['telefone'],
+                               cep=form['clientData']['cep'], rua=form['clientData']['rua'], bairro=form['clientData']['bairro'],
+                               cidade=form['clientData']['cidade'])
         conn.commit()
            
-    return jsonify(data), 200
+    return (jsonify(data), 200)
 
 
 

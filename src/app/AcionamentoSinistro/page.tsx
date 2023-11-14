@@ -1,13 +1,17 @@
+"use client"
+
 import { Header } from "../components/Header/Header";
 import { Footer } from "../components/Footer/Footer";
 import { BodyAcionamento } from "../components/BodyAcionamento/BodyAcionamento";
 
-export const AcionamentoSinistro = () => {
+const AcionamentoSinistro = () => {
     return(
         <>
-        <Header RemoverInput/>
+        <Header RemoverInput={true}/>
         <BodyAcionamento />
         <Footer />
         </>
     )
 }
+
+export default AcionamentoSinistro

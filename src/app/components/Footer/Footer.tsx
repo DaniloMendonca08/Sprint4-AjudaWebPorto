@@ -13,7 +13,7 @@ export const Footer = () => {
             Nome: Rodrigo Gonçalves Teixeira Filho / RM: 99838 <br />
             Nome: Arthur Lima Nascimento / RM: 551054 <br />
             </StyledParagraphFooter>
-            <StyledAFooter href="https://github.com/DaniloMendonca08/AjudaWebPorto" target="_blank">Repositório GitHub</StyledAFooter>
+            <StyledAFooter href="https://github.com/DaniloMendonca08/Sprint4-AjudaWebPorto" target="_blank">Repositório GitHub</StyledAFooter>
         </StyledFooter>
     )
 }

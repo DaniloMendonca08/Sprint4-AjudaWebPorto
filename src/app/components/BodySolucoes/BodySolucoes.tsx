@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image"
 import { Imagem } from "../Imagem/Imagem"
 import { Paragrafo } from "../Paragrafo/Paragrafo"
 import { Titulo } from "../Titulo/Titulo"
@@ -5,7 +6,7 @@ import { StyledDivBodySolucoes } from "./BodySolucoes.style"
 
 interface BodySolucoesprops{
     titulo: string,
-    img: string,
+    img: StaticImageData,
     texto: string,
     descricao?: string,
 }

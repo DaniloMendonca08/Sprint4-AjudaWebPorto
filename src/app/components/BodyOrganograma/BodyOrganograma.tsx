@@ -1,4 +1,6 @@
-import imgOrganograma from "../../assets/Organograma.svg";
+"use client"
+
+import imgOrganograma from "../../../assets/Organograma.png";
 import { Imagem } from "../Imagem/Imagem";
 import { Titulo } from "../Titulo/Titulo";
 import { StyledDivOrganograma } from "./BodyOrganograma.style";

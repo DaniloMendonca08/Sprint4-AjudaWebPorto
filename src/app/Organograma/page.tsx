@@ -1,13 +1,17 @@
+"use client"
+
 import { Header } from "../components/Header/Header";
 import { BodyOrganograma } from "../components/BodyOrganograma/BodyOrganograma";
 import { Footer } from "../components/Footer/Footer";
 
-export const Organograma = () => {
+const Organograma = () => {
     return(
         <>
-        <Header RemoverInput />
+        <Header RemoverInput={true}/>
         <BodyOrganograma />
         <Footer />
         </>
     )
 }
+
+export default Organograma

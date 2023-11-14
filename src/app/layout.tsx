@@ -1,6 +1,5 @@
 "use client"
 
-import { Inter, Open_Sans } from 'next/font/google'
 import GlobalStyles from '@/styles/globalStyles'
 import { SolucaoPorto } from './SolucaoPorto/page'
 import { Footer } from './components/Footer/Footer'

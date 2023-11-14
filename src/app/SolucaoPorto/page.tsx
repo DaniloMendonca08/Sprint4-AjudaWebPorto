@@ -1,8 +1,10 @@
+"use client"
+
 import { Header } from "../components/Header/Header";
 import { BodyPagPrincipal } from "../components/BodyPagPrincipal/BodyPagPrincipal";
 import { Footer } from "../components/Footer/Footer";
 
-export const SolucaoPorto = () => {
+const SolucaoPorto = () => {
     return(
         <>
         <Header />
@@ -11,3 +13,5 @@ export const SolucaoPorto = () => {
         </>
     )
 }
+
+export default SolucaoPorto

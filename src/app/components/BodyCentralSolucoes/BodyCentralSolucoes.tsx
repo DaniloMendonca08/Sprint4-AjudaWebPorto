@@ -9,10 +9,10 @@ export const BodyCentralSolucoes = () => {
             <Titulo titulo="Central de Soluções"/>
 
             <StyledDivCentralSolucoes>
-                <StyledTagACentralSolucoes href="">Acionar Sinistro</StyledTagACentralSolucoes>
-                <StyledTagACentralSolucoes href="">Revisões Breves</StyledTagACentralSolucoes>
+                <StyledTagACentralSolucoes href="/AcionamentoSinistro">Acionar Sinistro</StyledTagACentralSolucoes>
+                <StyledTagACentralSolucoes href="/RevisoesBreves">Revisões Breves</StyledTagACentralSolucoes>
                 <StyledTagACentralSolucoes href="/Ajuda">Ajuda</StyledTagACentralSolucoes>
-                <StyledTagACentralSolucoes href="">Reportar Problema</StyledTagACentralSolucoes>
+                <StyledTagACentralSolucoes href="/ReportarProblema">Reportar Problema</StyledTagACentralSolucoes>
             </StyledDivCentralSolucoes>
         </>
     )

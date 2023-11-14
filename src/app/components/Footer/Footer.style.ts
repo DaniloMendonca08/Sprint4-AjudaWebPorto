@@ -1,7 +1,8 @@
+import { colors } from "@/styles/colors"
 import styled from "styled-components"
 
 export const StyledFooter = styled.footer`
-    background-color: #000000;
+    background-color: ${colors.primary.dark};
     width: 100%;
     height: 18vh;
     padding-bottom: 26px;
@@ -15,10 +16,10 @@ export const StyledFooter = styled.footer`
 }
 
 @media (min-width: 1024px) {
-    height: 18vh;
+    height: 22vh;
 }
 @media (min-width: 1440px) {
-    height: 19vh;
+    height: 20.5vh;
 }
 
 @media (min-width: 1920px) {
@@ -26,8 +27,7 @@ export const StyledFooter = styled.footer`
 }
 `
 export const StyledParagraphFooter = styled.p`
-    color: #FFFFFF;
-    font-family: 'Open Sans';
+    color: ${colors.primary.light};
     font-size: 13px;
     font-weight: 300;
     padding: 10px 40px;
@@ -44,32 +44,31 @@ export const StyledParagraphFooter = styled.p`
 
 @media (min-width: 1024px) {
     padding: 10px;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 @media (min-width: 1440px) {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 @media (min-width: 1920px) {
-    font-size: 18px;
+    font-size: 17px;
 }
 `
 
 export const StyledAFooter = styled.a`
     text-decoration: none;
-    font-family: 'Open Sans';
     padding: 0 40px;
     margin-left: 2vw;
     border-radius: 10px;
-    background-color: #000000;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+    background-color: ${colors.primary.dark};
+    color: ${colors.primary.light};
+    border: 2px solid ${colors.primary.light};
 
 &:hover {
-    background-color: #FFFFFF;
-    color: #000000;
-    border: 2px solid #000000;
+    background-color: ${colors.primary.light};
+    color: ${colors.primary.dark};
+    border: 2px solid ${colors.primary.dark};
 }
 
 @media (min-width: 320px) {
