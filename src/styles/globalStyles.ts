@@ -1,6 +1,10 @@
 "use client"
 
+
+import { Open_Sans } from "next/font/google";
 import { createGlobalStyle } from "styled-components";
+
+const openSans = Open_Sans({ subsets: ['latin'] ,weight:'300'})
 
 const styled = { createGlobalStyle }
 
@@ -14,6 +18,7 @@ const GlobalStyles = styled.createGlobalStyle`
 html {
     height: 100%;
     width: 100%;
+    font-family: ${openSans.style.fontFamily};
   }
 
 img {
