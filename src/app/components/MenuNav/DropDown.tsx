@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import IconeMenu from '../../../assets/iconeMenu.png'
 import './DropDown.style.css'
 import Link from 'next/link';
+import { Imagem } from '../Imagem/Imagem';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ const Dropdown = () => {
   return (
     <div className="dropdown">
       <button className="dropdown-img" onClick={toggleDropdown}>
-        <img src={IconeMenu.src} alt="" />
+        <Imagem img={IconeMenu} descricao="Icone de menu" />
       </button>
       {isOpen && windowWidth !== 0 && (
            <ul className="dropdown-menu">
