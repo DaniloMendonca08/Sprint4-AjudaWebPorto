@@ -3,7 +3,7 @@ import { StyledImg } from "./Imagem.style"
 
 interface ImagemProps {
     img: StaticImageData,
-    descricao?: string,
+    descricao: string,
 }
 
 export const Imagem = ({img, descricao}: ImagemProps) => {

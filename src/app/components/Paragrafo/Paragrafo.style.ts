@@ -16,7 +16,6 @@ export const StyledParagraph = styled.p`
     }
 
     @media (min-width: 375px) {
-        font-size: 17px;
         margin-bottom: 2.9vh;
         padding-bottom: 7.5vh;
     }

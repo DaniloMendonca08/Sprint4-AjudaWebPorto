@@ -50,10 +50,6 @@ export const StyledParagraphFooter = styled.p`
 @media (min-width: 1440px) {
     font-size: 17px;
 }
-
-@media (min-width: 1920px) {
-    font-size: 17px;
-}
 `
 
 export const StyledAFooter = styled.a`

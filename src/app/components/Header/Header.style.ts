@@ -59,7 +59,6 @@ interface StyledInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   background-repeat: no-repeat;
   border: 1px solid ${colors.primary.light};
   text-align: center;
-  margin-right: 205px;
 
   ${(props) =>
     props.RemoverInput &&
@@ -67,16 +66,22 @@ interface StyledInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
         display: none;
     `}
 
-  @media (min-width: 768px) and (max-width: 1023px) {
+    @media (min-width: 320px) {
+        display: none
+    }
+
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+    display: block;
     width: 350px;
     height: 40px;
     margin-right: 70px;
   }
 
-  @media (min-width: 1024px) {
+    @media (min-width: 1024px) {
+    display: block;
     font-size: 18px;
     width: 450px;
-    margin-left: 40px;
   }
 `;
 
