@@ -12,12 +12,15 @@ Abra [http://localhost:3000](http://localhost:3000) em seu navegador para ver o 
 
 Para funcionar a API, abra a pasta server pelo terminal pelo seguinte comando:
 cd src/server/
-e execute o comando:
+
+E execute o comando:
+
 source venv/bin/activate -- caso esteja utilizando MAC
 
 venv\Scripts\activate.bat -- caso esteja utilizando WINDOWS
 
 Depois, execute:
+
 python3 server.py -- caso esteja utilizando MAC
 
 python server.py -- caso esteja utilizando WINDOWS
