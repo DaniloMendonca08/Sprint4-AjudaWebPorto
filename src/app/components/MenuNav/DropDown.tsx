@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -18,6 +18,7 @@ const Dropdown = () => {
       setWindowWidth(window.innerWidth);
     };
 
+    // Verifica se window está disponível (lado do cliente)
     if (typeof window !== 'undefined') {
       setWindowWidth(window.innerWidth);
       window.addEventListener('resize', handleResize);
@@ -33,7 +34,7 @@ const Dropdown = () => {
       <button className="dropdown-img" onClick={toggleDropdown}>
         <img src={IconeMenu.src} alt="" />
       </button>
-      {isOpen && (
+      {isOpen && windowWidth !== 0 && (
            <ul className="dropdown-menu">
             {windowWidth === 320 || windowWidth === 375 || windowWidth === 425 || windowWidth === 768 ? (
             <>
