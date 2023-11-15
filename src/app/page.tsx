@@ -9,8 +9,9 @@ import { BodyPagPrincipal } from './components/BodyPagPrincipal/BodyPagPrincipal
 export default function Home() {
   return (
     <>
-    <Layout />
+    <Layout>
       <BodyPagPrincipal  />
+    </Layout>
     </>
   )
 }
