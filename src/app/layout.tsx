@@ -9,12 +9,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <head>
-      <meta
-            httpEquiv="Content-Security-Policy"
-            content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'"
-          />
-      </head>
       <GlobalStyles />
       <body>{children}</body>
     </html>
