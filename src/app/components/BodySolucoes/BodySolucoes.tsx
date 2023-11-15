@@ -8,7 +8,7 @@ interface BodySolucoesprops{
     titulo: string,
     img: StaticImageData,
     texto: string,
-    descricao?: string,
+    descricao: string,
 }
 
 export const BodySolucoes = ({titulo, img, texto, descricao}: BodySolucoesprops) => {
