@@ -1,7 +1,6 @@
 import { Paragrafo } from "../Paragrafo/Paragrafo"
 import { Titulo } from "../Titulo/Titulo"
-import { StyledDivPagPrincipal } from "./BodyPagPrincipal.style"
-import { StyledIframePagPrincipal } from "./BodyPagPrincipal.style"
+import { StyledDivPagPrincipal, StyledIframePagPrincipal } from "./BodyPagPrincipal.style"
 
 const paragrafo1 = "De acordo com as informações passadas pela equipe Porto, avaliamos uma carência na qualidade que é passada as informações pelo assegurado, sendo assim, tivemos a ideia de fazer um sistema que fácilitará com que o assegurado não tenha que passar muitas informações, com isso, será poupado um tempo do assegurado e garantido que as informações sejam adquiridas de forma correta, partindo deste ponto vamos implementar uma grande base de dados que fará com que todas as informações básicas do veiculo sejam recebidas antes que haja necessidade de apoio. Claramente, que não é possivel ter todas as informações, então, para que tenha todas as informações possiveis para que o chamado correto seja estabelecido, vamos fazer algumas perguntas que são muito dificeis de ser detectadas, por exemplo: peso adicional, quantidade de eixos, entre outros."
 

@@ -1,14 +1,14 @@
 "use client"
 
-import Home from './home/page'
+import SolucaoPorto from './SolucaoPorto/page'
 import GlobalStyles from '@/styles/globalStyles'
 
 
-export default function Page() {
+export default function Home() {
   return (
     <>
     <GlobalStyles />
-    <Home  />
+    <SolucaoPorto  />
     </>
   )
 }
