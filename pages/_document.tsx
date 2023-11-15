@@ -28,19 +28,6 @@ class MyDocument extends Document {
     }
   }
 
-  render() {
-    return (
-      <Html lang="pt-BR">
-        <Head>
-          {/* Seus meta tags, links e outros elementos head aqui */}
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
 }
 
 export default MyDocument;
