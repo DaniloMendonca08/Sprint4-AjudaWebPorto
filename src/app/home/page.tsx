@@ -4,7 +4,7 @@ import { Header } from "../components/Header/Header";
 import { BodyPagPrincipal } from "../components/BodyPagPrincipal/BodyPagPrincipal";
 import { Footer } from "../components/Footer/Footer";
 
-const SolucaoPorto = () => {
+const Home = () => {
     return(
         <>
         <Header />
@@ -14,4 +14,4 @@ const SolucaoPorto = () => {
     )
 }
 
-export default SolucaoPorto
+export default Home

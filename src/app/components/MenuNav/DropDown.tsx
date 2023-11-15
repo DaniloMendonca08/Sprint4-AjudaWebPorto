@@ -19,7 +19,7 @@ const Dropdown = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    // Verifica se window está disponível (lado do cliente)
+    
     if (typeof window !== 'undefined') {
       setWindowWidth(window.innerWidth);
       window.addEventListener('resize', handleResize);
