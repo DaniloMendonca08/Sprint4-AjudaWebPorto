@@ -1,8 +1,10 @@
 "use client"
 
 import GlobalStyles from '@/styles/globalStyles'
+import { Header } from './components/Header/Header'
+import { Footer } from './components/Footer/Footer'
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: {
   children: React.ReactNode
@@ -10,7 +12,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <GlobalStyles />
+      <Header />
       <body>{children}</body>
+      <Footer />
     </html>
   )
 }
