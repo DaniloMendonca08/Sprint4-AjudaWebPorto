@@ -10,7 +10,7 @@ const paragrafo2 = "Já no Front-end, vamos implementar uma interface rica mais 
 export const BodyPagPrincipal = () => {
     return(
         <>
-             <StyledDivPagPrincipal> 
+            <div>
                <Titulo titulo="Solução Porto"/>
 
                <Paragrafo texto={paragrafo1} />
@@ -18,7 +18,7 @@ export const BodyPagPrincipal = () => {
                <Paragrafo texto={paragrafo2} />
 
                <StyledIframePagPrincipal src="https://www.youtube.com/embed/F4O96O1h_RY?si=rk-7Hna38Dvpuy9N" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></StyledIframePagPrincipal>
-            </StyledDivPagPrincipal>
+            </div>
         </>
     )                                       
 }
