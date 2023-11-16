@@ -9,6 +9,7 @@ const SolucaoPorto = () => {
         <>
         <Header />
         <BodyPagPrincipal />
+        <Footer />
         </>
     )
 }

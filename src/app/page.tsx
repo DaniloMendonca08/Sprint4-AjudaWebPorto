@@ -10,9 +10,8 @@ import { BodyAcionamento } from './components/BodyAcionamento/BodyAcionamento'
 export default function Home() {
   return (
     <>
-    <Layout>
-      <BodyAcionamento />
-    </Layout>
+    <GlobalStyles />
+    <SolucaoPorto />
     </>
   )
 }
