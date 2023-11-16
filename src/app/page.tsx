@@ -10,7 +10,7 @@ import { BodyAcionamento } from './components/BodyAcionamento/BodyAcionamento'
 export default function Home() {
   return (
     <>
-    <BodyPagPrincipal />
+    <SolucaoPorto />
     </>
   )
 }
