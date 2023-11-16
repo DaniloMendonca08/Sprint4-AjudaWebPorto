@@ -18,7 +18,6 @@ const Dropdown = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-
     
     if (typeof window !== 'undefined') {
       setWindowWidth(window.innerWidth);
@@ -39,9 +38,7 @@ const Dropdown = () => {
            <ul className="dropdown-menu">
             {windowWidth === 320 || windowWidth === 375 || windowWidth === 425 || windowWidth === 768 ? (
             <>
-              <li>
-                <Link href="/Ajuda">Ajuda</Link>
-              </li>
+                <Link href="/Ajuda"><li>Ajuda</li></Link>
               <li>
               <Link href="/Organograma">Organog.</Link>
               </li>
