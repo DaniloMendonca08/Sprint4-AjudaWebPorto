@@ -10,7 +10,6 @@ import { BodyAcionamento } from './components/BodyAcionamento/BodyAcionamento'
 export default function Home() {
   return (
     <>
-    <GlobalStyles />
     <BodyPagPrincipal />
     </>
   )
