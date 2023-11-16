@@ -6,7 +6,7 @@ const paragrafo1 = "De acordo com as informações passadas pela equipe Porto, a
 
 const paragrafo2 = "Já no Front-end, vamos implementar uma interface rica mais simplista para que o assegurado não se perca na hora de acionar a seguradora, vamos adicionar alguns botões que farão o auxilio do assegurado durante o chamado que será administrado por alguns métodos artificiais, que por sua vez, terão todas as informações necessárias para fazer a melhor escolha de ajuda para a determinada ocasião."
 
-export const BodyPagPrincipal = () => {
+const BodyPagPrincipal = () => {
     return(
         <>
              <StyledDivPagPrincipal> 
@@ -21,3 +21,5 @@ export const BodyPagPrincipal = () => {
         </>
     )                                       
 }
+
+export default BodyPagPrincipal
