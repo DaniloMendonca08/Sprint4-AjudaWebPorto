@@ -9,7 +9,6 @@ export default function Layout({children,}: {children: React.ReactNode}) {
     <html lang="pt-BR">
       <GlobalStyles />
       <body>{children}</body>
-      <Footer />
     </html>
   )
 }
