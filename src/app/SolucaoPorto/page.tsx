@@ -7,9 +7,7 @@ import { Footer } from "../components/Footer/Footer";
 const SolucaoPorto = () => {
     return(
         <>
-        <Header />
         <BodyPagPrincipal />
-        <Footer />
         </>
     )
 }
